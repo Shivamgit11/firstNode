@@ -10,6 +10,13 @@
       main {
         text-align: center;
         background-color: yellow;
+        margin-top: 5rem;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: 5px dotted red;
+      }
+      main :hover {
+        background-color: skyblue;
       }
       button {
         margin-top: 10px;
@@ -25,6 +32,12 @@
       button:active {
         background-color: aqua;
         color: white;
+      }
+      body {
+        background-color: aqua;
+      }
+      input {
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -44,12 +57,20 @@
     </header>
 
     <main>
+      <marquee width="60%" direction="left" height="30px">
+        Book your call our one of the executive will contact soon
+         </marquee>
       <h1>Book a call</h1>
       <form action="/successful">
-        <label for="name">Enter Name</label>
-        <input type="text" id="Name" />
-        <label type="Email" for="mail">Enter Email</label>
-        <input id="mail" />
+        <div>
+          <label for="name">Enter Name</label>
+          <input type="text" id="Name" />
+        </div>
+        <div>
+          <label type="Email" for="mail">Enter Email</label>
+          <input id="mail" />
+        </div>
+
         <button type="submit">Book a call</button>
       </form>
     </main>
